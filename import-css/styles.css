@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    background: #fff;
+    padding: 30px 0 10px;
+    color: #333;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+/* Left Section */
+.left-section {
+    width: 30%;
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+}
+
+.logo {
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.address, .company-name, .address-detail, .note {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.note {
+    margin: 10px 0 15px;
+}
+
+.cert-img {
+    max-width: 150px;
+    margin: 15px 0;
+}
+
+/* Social & App Links */
+.social-links, .app-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #666;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.app-badge {
+    height: 38px;
+}
+
+/* Right Section */
+.right-section {
+    width: 68%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Service Columns */
+.service-columns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.service-column {
+    width: 32%;
+}
+
+.column-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.service-links {
+    list-style: none;
+}
+
+.service-links li {
+    margin-bottom: 12px;
+}
+
+.service-links a {
+    color: #444;
+    text-decoration: none;
+    font-size: 13.5px;
+    transition: color 0.2s;
+}
+
+.service-links a:hover {
+    color: #f7941d;
+}
+
+/* Contact Section */
+.contact-section {
+    width: 100%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    color: #444;
+}
+
+.contact-icon {
+    font-size: 14px;
+}
+
+/* Partners */
+.partners-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.partner-logo {
+    height: 40px;
+    object-fit: contain;
+    margin: 5px 10px;
+}
+
+/* License */
+.license {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive */
+ @media (max-width: 992px) {
+    .left-section, .right-section {
+        width: 100%;
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .service-columns {
+        flex-wrap: wrap;
+    }
+
+    .service-column {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+ @media (max-width: 768px) {
+    .service-column {
+        width: 100%;
+    }
+}
